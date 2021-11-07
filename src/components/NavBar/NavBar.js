@@ -5,7 +5,6 @@ import navbarItems from "../../constants/navbarItems";
 
 const NavBarWrapper = styled.div`
   display: flex;
-  width: 100vw;
   color: #fff;
 `;
 

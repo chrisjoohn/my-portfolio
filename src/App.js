@@ -1,6 +1,9 @@
 import styled from "styled-components";
+import { Routes, Route } from "react-router-dom";
 
 import NavBar from "./components/NavBar";
+
+import Home from "./pages/Home";
 
 const AppWrapper = styled.div`
   background-color: #181a1d;
@@ -11,6 +14,9 @@ const AppWrapper = styled.div`
 const App = () => (
   <AppWrapper>
     <NavBar />
+    <Routes>
+      <Route path="/" exact element={<Home />} />
+    </Routes>
   </AppWrapper>
 );
 
