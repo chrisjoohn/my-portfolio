@@ -5,6 +5,7 @@ const HomeWrapper = styled.div`
   color: #fff;
   margin-top: 60px;
   justify-content: space-around;
+  user-select: none;
 `;
 
 const GreetingsWrapper = styled.div`

@@ -6,6 +6,7 @@ import navbarItems from "../../constants/navbarItems";
 const NavBarWrapper = styled.div`
   display: flex;
   color: #fff;
+  user-select: none;
 `;
 
 const NavBarContent = styled.div`
@@ -22,7 +23,7 @@ const NavBarItem = styled.div`
   cursor: pointer;
 
   &:hover {
-    opacity: 1;
+    opacity: 0.7;
   }
 `;
 
