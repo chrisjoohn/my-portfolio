@@ -45,25 +45,18 @@ const Role = styled(Greetings)`
 `;
 
 const ImageWrapper = styled.div`
+  height: 100%;
   width: 100%;
-  margin-top: 5em;
-`;
-
-const fadeIn = keyframes`
-  from { opacity: 0 }
-  to { opacity: 1 }
 `;
 
 const ImageContainer = styled.div`
-  height: 600px;
+  position: absolute;
+  height: 800px;
+  width: 800px;
+  bottom: 0;
   background-size: cover;
   background-image: url("/images/memoji.PNG");
-  transform: translateY(-100px);
   background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
 `;
 
 const Home = () => {
