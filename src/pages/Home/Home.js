@@ -21,6 +21,11 @@ const typewriter = keyframes`
   to { width: 100% }
 `;
 
+const fadeIn = keyframes`
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+`
+
 const Greetings = styled.h1`
   margin-top: 0;
   margin-bottom: 0;
@@ -51,12 +56,13 @@ const ImageWrapper = styled.div`
 
 const ImageContainer = styled.div`
   position: absolute;
-  height: 800px;
-  width: 800px;
+  height: 700px;
+  width: 700px;
   bottom: 0;
   background-size: cover;
   background-image: url("/images/memoji.PNG");
   background-repeat: no-repeat;
+  animation: ${fadeIn} 5s;
 `;
 
 const Home = () => {
