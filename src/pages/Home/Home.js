@@ -6,14 +6,16 @@ const HomeWrapper = styled.div`
   margin-top: 60px;
   justify-content: space-around;
   user-select: none;
-  margin-top: 5%;
+  min-height: 100vh;
+  position: relative;
+  background-color: #181a1d;
 `;
 
 const GreetingsWrapper = styled.div`
   padding-left: 100px;
   height: 50vh;
   width: 100%;
-  margin-top: 10em;
+  margin-top: 20em;
 `;
 
 const typewriter = keyframes`
@@ -58,7 +60,7 @@ const ImageContainer = styled.div`
   position: absolute;
   height: 700px;
   width: 700px;
-  bottom: 0;
+  bottom: 5;
   background-size: cover;
   background-image: url("/images/memoji.PNG");
   background-repeat: no-repeat;
@@ -73,9 +75,11 @@ const Home = () => {
         <Name>I'm Chris John,</Name>
         <Role>Full Stack Developer.</Role>
       </GreetingsWrapper>
+      {/*
       <ImageWrapper>
         <ImageContainer />
       </ImageWrapper>
+      */}
     </HomeWrapper>
   );
 };
